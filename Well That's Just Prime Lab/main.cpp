@@ -49,12 +49,30 @@ int main() {
     assert(primeFactors(1).empty());
     assert(primeFactors(0).empty());
     
+    vector<int> excepted2 = {2};
+    assert(primeFactors(2) == excepted2);
     
+    vector<int> excepted10 = {2,5};
+    assert(primeFactors(10) == excepted10);
     
+    vector<int> excepted12 = {2,2,3};
+    assert(primeFactors(12) == excepted12);
     
+    vector<int> excepted100 = {2,2,5,5};
+    assert(primeFactors(100) == excepted100);
     
+    vector<int> excepted25 = {5,5};
+    assert(primeFactors(25) == excepted25);
     
+    vector<int> excepted30 = {2,3,5};
+    assert(primeFactors(30) == excepted30);
     
+    cout << "all tests passed!" << endl;
+    cout << "\n\n";
+
+    
+
     
     return EXIT_SUCCESS;
 }
+ 
