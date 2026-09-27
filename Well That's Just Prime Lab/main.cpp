@@ -17,6 +17,16 @@
 
 using namespace std;
 
+vector<int> primeFactors(int number)
+{
+    vector<int> factors;
+    
+    if(number <= 1)
+    {
+        return factors;
+    }
+    
+}
 
 
 int main() {
