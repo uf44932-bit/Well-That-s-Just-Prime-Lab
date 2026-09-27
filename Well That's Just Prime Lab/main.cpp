@@ -26,6 +26,16 @@ vector<int> primeFactors(int number)
         return factors;
     }
     
+    for (int i = 2; i <= number; i++)
+    {
+        if (number % i == 0)
+        {
+            factors.push_back(i);
+            
+            vector<int> remaining = primeFactors(number / i);
+            
+        }
+    }
 }
 
 
