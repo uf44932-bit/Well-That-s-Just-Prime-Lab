@@ -34,12 +34,21 @@ vector<int> primeFactors(int number)
             
             vector<int> remaining = primeFactors(number / i);
             
+            factors.insert(factors.end(), remaining.begin(), remaining.end());
+            return factors;
         }
     }
+    
+    return factors;
+
 }
 
 
 int main() {
+    
+    assert(primeFactors(1).empty());
+    assert(primeFactors(0).empty());
+    
     
     
     
